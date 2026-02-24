@@ -3,43 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- FONTES PREMIUM -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
 <title>Império do Tempo</title>
 
 <style>
+
 body{
     margin:0;
-    font-family: 'Sans-serif', sans-serif;
-    background-color:#000;
-    color:#fff;
+    background:#ffffff;
+    font-family:'Montserrat', sans-serif;
+    color:#111;
 }
 
 header{
-    background:#000;
     padding:20px;
     text-align:center;
-    border-bottom:1px solid #222;
+    border-bottom:1px solid #eee;
 }
 
-header h1{
-    color:#d4af37;
+.logo{
+    font-family:'Playfair Display', serif;
+    font-size:32px;
     letter-spacing:3px;
-    margin:0;
+    font-weight:700;
 }
 
-.banner{
-    background:url('https://images.unsplash.com/photo-1523275335684-37898b6baf30') center/cover;
-    height:80vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.hero{
+    padding:80px 20px;
     text-align:center;
 }
 
-.banner h2{
-    background:rgba(0,0,0,0.6);
-    padding:20px 40px;
-    font-size:28px;
-    border:1px solid #d4af37;
+.hero h1{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    font-weight:300;
+    letter-spacing:1px;
+}
+
+.botao{
+    margin-top:30px;
+    padding:15px 40px;
+    background:#000;
+    color:#fff;
+    text-decoration:none;
+    letter-spacing:2px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.botao:hover{
+    background:#333;
 }
 
 .section{
@@ -47,121 +70,91 @@ header h1{
     text-align:center;
 }
 
-.section h3{
-    color:#d4af37;
-    margin-bottom:40px;
+.section h2{
+    font-family:'Playfair Display', serif;
+    font-size:36px;
     letter-spacing:2px;
+    margin-bottom:40px;
 }
 
-.products{
+.produtos{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:30px;
-    max-width:1200px;
-    margin:auto;
 }
 
 .card{
-    background:#111;
+    border:1px solid #eee;
     padding:20px;
-    border:1px solid #222;
     transition:0.3s;
 }
 
 .card:hover{
-    transform:scale(1.03);
-    border:1px solid #d4af37;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card img{
     width:100%;
-    height:300px;
-    object-fit:cover;
 }
 
-.card h4{
-    margin:15px 0 10px;
-}
-
-.price{
-    color:#d4af37;
-    font-size:18px;
-    margin-bottom:10px;
-}
-
-.btn{
-    background:#d4af37;
-    color:#000;
-    padding:10px 20px;
-    text-decoration:none;
-    display:inline-block;
-    font-weight:bold;
-}
-
-.about{
-    background:#111;
-    padding:60px 20px;
+.card h3{
+    font-family:'Playfair Display', serif;
+    font-size:22px;
+    margin:15px 0;
 }
 
 footer{
-    background:#000;
+    padding:40px;
     text-align:center;
-    padding:20px;
-    border-top:1px solid #222;
+    background:#111;
+    color:#fff;
     font-size:14px;
+    letter-spacing:1px;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>IMPÉRIO DO TEMPO</h1>
+<div class="logo">IMPÉRIO DO TEMPO</div>
 </header>
 
-<div class="banner">
-    <h2>Relógios de Luxo • Sofisticação • Exclusividade</h2>
-</div>
-
-<section class="section">
-    <h3>NOSSAS COLEÇÕES</h3>
-
-    <div class="products">
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d">
-            <h4>Chronos Gold</h4>
-            <div class="price">R$ 899,90</div>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3">
-            <h4>Royal Black</h4>
-            <div class="price">R$ 999,90</div>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa">
-            <h4>Imperial Silver</h4>
-            <div class="price">R$ 849,90</div>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-    </div>
+<section class="hero">
+<h1>RELÓGIOS DE LUXO MASCULINO</h1>
+<p>Sofisticação, presença e identidade em cada detalhe.</p>
+<a href="#" class="botao">VER COLEÇÃO</a>
 </section>
 
-<section class="about">
-    <h3>SOBRE A MARCA</h3>
-    <p>
-    A Império do Tempo nasceu para homens que valorizam elegância, presença e precisão. 
-    Cada peça combina design sofisticado com acabamento premium, criando um símbolo de status e personalidade.
-    </p>
+<section class="section">
+<h2>NOSSOS MODELOS</h2>
+
+<div class="produtos">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314">
+<h3>Imperial Black</h3>
+<p>Design marcante e acabamento refinado.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518544887872-77c45f6a3b63">
+<h3>Royal Silver</h3>
+<p>Elegância minimalista para todas ocasiões.</p>
+</div>
+
+<div class="card">
+<img src="https://www.google.com/aclk?sa=L&ai=DChsSEwjj2fiVi_OSAxUQQkgAHXAIAw4YACICCAEQORoCY2U&co=1&gclid=Cj0KCQiAtfXMBhDzARIsAJ0jp3DWK93KeF0cBTmFCe0pF5Udf8_LTysWcYTFTU7FK6vzY9Bf3rbJFKcaAo2PEALw_wcB&cid=CAAS9QHkaPWTRCKMAvFPHMXVke0Hb767MrgnmQEwyqpDRbR6c5rGueL46ZHbBGK7GwwCLF9p4q4bCx3CnGDmtieZkEqTso4OOBMzV1j7WTqhzt11zMCVIJNeO-1AUOYQRsM4kwDA-wK-RA-RrC-eCazZigYboM_Syh6oOrY3RUhk4EVYvNoFzvBkAQ2OZKDIQ599gG8VhCPpRjUabhiUbRxKs9SawgpmKrpNILku4gvaOH_KlmVhI0T5jZQUa-HdTjvQpNPL8C2Dq5lep_lA92UeC1fDcJDd39iJtLyTtPTfHTh0C1skJqIsOoH6L4YVDLuQvhYcdOkn1Q&cce=2&sig=AOD64_06-tInNDpwd9_RB6CWYr0ksr_6bQ&ctype=5&q=&ved=2ahUKEwiz9fSVi_OSAxVrrZUCHfvXLDAQ8w4oAHoECE0QAQ&adurl=">
+<h3>Relógio Rolex Sea-Dweller Deepsea 44mm Automatic Prateado</h3>
+<p>Presença forte e visual imponente.</p>
+</div>
+
+</div>
 </section>
 
 <footer>
-    © 2026 Império do Tempo • Todos os direitos reservados
+© 2026 Império do Tempo — Todos os direitos reservados
 </footer>
 
 </body>
